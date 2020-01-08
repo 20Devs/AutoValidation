@@ -16,7 +16,7 @@ namespace Twenty.Devs.RazorPages
 
         public void OnGet()
         {
-            Message = "Fiil the Form ";
+            Message = "Fill the Form ";
         }
 
         public async Task<IActionResult> OnPostAsync(CancellationToken cancellationToken)

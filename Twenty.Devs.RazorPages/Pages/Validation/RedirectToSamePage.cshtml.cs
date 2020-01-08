@@ -13,14 +13,14 @@ namespace Twenty.Devs.RazorPages
     [AutoValidatioFilter
     (
         ResultPageKind              = ResultPage.RedirectToSamePage, 
-        ForHttpMethod               = "post",
+        HttpMethod               = "post",
         CopyRouteData               = true,
         CopyModelStateToTempData    = true
     )]
     [AutoValidatioFilter
     (
         ResultPageKind              = ResultPage.ReturnPage,
-        ForHttpMethod               = "get"
+        HttpMethod               = "get"
     )]
     [ImportModelStateFilter]
 

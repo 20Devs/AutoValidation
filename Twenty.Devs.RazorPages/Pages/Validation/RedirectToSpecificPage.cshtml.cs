@@ -12,8 +12,8 @@ namespace Twenty.Devs.RazorPages
     [AutoValidatioFilter
     (
         ResultPageKind              = ResultPage.RedirectToSpecificPage,
-        ForHttpMethod               = "get",
-        ForHandler                  = "save",
+        HttpMethod               = "get",
+        Handler                  = "save",
         CopyModelStateToTempData    = true,
         Page                        = "ShowValidationResult"
     )]

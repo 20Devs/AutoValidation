@@ -11,8 +11,8 @@ namespace Twenty.Devs.RazorPages
     [AutoValidatioFilter
     (
         ResultPageKind              = ResultPage.BadRequest,
-        ForHttpMethod               = "get",
-        ForHandler                  = "save"
+        HttpMethod               = "get",
+        Handler                  = "save"
     )]
     public class ReturnStatusCode : PageModel
     {

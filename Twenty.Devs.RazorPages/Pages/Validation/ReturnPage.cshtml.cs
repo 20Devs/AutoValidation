@@ -9,7 +9,7 @@ using Twenty.Devs.RazorPages.Model;
 
 namespace Twenty.Devs.RazorPages
 {
-    [AutoValidatioFilter(ResultPageKind = ResultPage.ReturnPage,ForHttpMethod = "post")]
+    [AutoValidatioFilter(ResultPageKind = ResultPage.ReturnPage,HttpMethod = "post")]
     public class ReturnPageModel : PageModel
     {
 

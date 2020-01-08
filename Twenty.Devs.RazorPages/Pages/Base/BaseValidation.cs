@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace Twenty.Devs.RazorPages.Pages.Base
 {
-    [AutoValidatioFilter(ForHttpMethod = "post",ResultPageKind = ResultPage.ReturnPage)]
+    [AutoValidatioFilter(HttpMethod = "post",ResultPageKind = ResultPage.ReturnPage)]
     public class BaseValidation : PageModel
     {
 

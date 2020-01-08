@@ -21,8 +21,8 @@ namespace Twenty.Devs
         }
         #region Properties
 
-        public string           ForHandler                  { get; set; }
-        public string           ForHttpMethod               { get; set; }
+        public string           Handler                  { get; set; }
+        public string           HttpMethod               { get; set; }
 
         public string           Page                        { get; set; }
         public string           Controller                  { get; set; }
@@ -169,12 +169,12 @@ namespace Twenty.Devs
             if (!context.ModelState.IsValid)
             {
                 // Do Something
-                if (!string.IsNullOrWhiteSpace(ForHandler))
-                    if (!string.Equals(context.HandlerMethod.Name, ForHandler, StringComparison.InvariantCultureIgnoreCase))
+                if (!string.IsNullOrWhiteSpace(Handler))
+                    if (!string.Equals(context.HandlerMethod.Name, Handler, StringComparison.InvariantCultureIgnoreCase))
                         await next.Invoke();
 
-                if (!string.IsNullOrWhiteSpace(ForHttpMethod))
-                    if (!string.Equals(context.HandlerMethod.HttpMethod, ForHttpMethod, StringComparison.InvariantCultureIgnoreCase))
+                if (!string.IsNullOrWhiteSpace(HttpMethod))
+                    if (!string.Equals(context.HandlerMethod.HttpMethod, HttpMethod, StringComparison.InvariantCultureIgnoreCase))
                         await next.Invoke();
 
                 SetPageResult(context);
