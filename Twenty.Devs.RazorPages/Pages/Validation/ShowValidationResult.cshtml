@@ -1,0 +1,20 @@
+﻿@page
+@model Twenty.Devs.RazorPages.ShowValidationResultModel
+@{
+    ViewData["Title"] = "ShowValidationResult";
+}
+
+
+
+<section class="mt-5">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            @if (!ModelState.IsValid)
+            {
+                <div class=" alert alert-danger" asp-validation-summary="All">
+
+                </div>
+            }
+        </div>
+    </div>
+</section>

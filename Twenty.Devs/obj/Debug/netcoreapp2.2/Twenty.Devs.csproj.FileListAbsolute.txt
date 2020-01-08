@@ -1,0 +1,8 @@
+E:\_Articles\Validation\AutoValidation\Twenty.Devs\bin\Debug\netcoreapp2.2\Twenty.Devs.deps.json
+E:\_Articles\Validation\AutoValidation\Twenty.Devs\bin\Debug\netcoreapp2.2\Twenty.Devs.dll
+E:\_Articles\Validation\AutoValidation\Twenty.Devs\obj\Debug\netcoreapp2.2\Twenty.Devs.AssemblyInfoInputs.cache
+E:\_Articles\Validation\AutoValidation\Twenty.Devs\obj\Debug\netcoreapp2.2\Twenty.Devs.AssemblyInfo.cs
+E:\_Articles\Validation\AutoValidation\Twenty.Devs\bin\Debug\netcoreapp2.2\Twenty.Devs.pdb
+E:\_Articles\Validation\AutoValidation\Twenty.Devs\obj\Debug\netcoreapp2.2\Twenty.Devs.dll
+E:\_Articles\Validation\AutoValidation\Twenty.Devs\obj\Debug\netcoreapp2.2\Twenty.Devs.pdb
+E:\_Articles\Validation\AutoValidation\Twenty.Devs\obj\Debug\netcoreapp2.2\Twenty.Devs.csprojAssemblyReference.cache

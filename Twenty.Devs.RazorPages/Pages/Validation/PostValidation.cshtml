@@ -1,0 +1,95 @@
+﻿@page
+@model Twenty.Devs.RazorPages.PostValidationModel
+@{
+    ViewData["Title"] = "PostValidation";
+}
+
+
+<section class="mt-5">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            @if (!string.IsNullOrWhiteSpace(Model.Message))
+            {
+                <div class=" alert alert-primary">
+                    @Model.Message
+                </div>
+            }
+            @if (!ModelState.IsValid)
+            {
+                <div class=" alert alert-danger" asp-validation-summary="All">
+
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<section class="mt-1">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <form method="post"   class="border border-light p-2">
+                <div class="form-row">
+                    <div class="form-group ">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <label class="m-0" asp-for="User.Name">Name:</label>
+                                </span>
+                            </div>
+                            <input asp-for="User.Name" type="text" class="form-control" />
+                        </div>
+                        <span asp-validation-for="User.Name" class="text-danger"></span>
+                    </div>
+
+                </div>
+                <div class="form-row">
+                    <div class="form-group ">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <label class="m-0" asp-for="User.Family">Family:</label>
+                                </span>
+                            </div>
+                            <input asp-for="User.Family" type="text" class="form-control" />
+                        </div>
+                        <span asp-validation-for="User.Family" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group ">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <label class="m-0" asp-for="User.Age">Age:</label>
+                                </span>
+                            </div>
+                            <input asp-for="User.Age" type="text" class="form-control" />
+                        </div>
+                        <span asp-validation-for="User.Age" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group ">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <label class="m-0" asp-for="User.Email">@@ Email :</label>
+                                </span>
+                            </div>
+                            <input asp-for="User.Email" type="text" class="form-control" />
+                        </div>
+                        <span asp-validation-for="User.Email" class="text-danger"></span>
+                    </div>
+                </div>
+                <hr />
+
+                <div class="form-row">
+                    <button class=" btn btn-sm btn-success">Submit</button>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+</section>
+
